@@ -7,7 +7,7 @@ import { useAppDispatch } from "@/store/store";
 let usersData: TUser[] = [];
 
 // получение данных пользователей на стороне сервера
-export async function getUsers(name?: string) {
+async function getUsers(name?: string) {
   const res = Axios(`/users/`)
     .then((res) => {
       return res.data;

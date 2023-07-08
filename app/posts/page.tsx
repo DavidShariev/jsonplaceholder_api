@@ -7,7 +7,7 @@ import Pagination from "@/components/Pagination";
 let posts: TPost[] = [];
 
 // получение постов на стороне сервера
-export async function getPosts(name?: string) {
+async function getPosts(name?: string) {
   const res = Axios(`/posts/`)
     .then((res) => {
       return res.data;

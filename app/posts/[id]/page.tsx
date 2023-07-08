@@ -14,7 +14,7 @@ import Link from "next/link";
 import Tag from "@/components/Tag";
 import AddComment from "@/components/AddComment";
 
-const page = () => {
+const Page = () => {
   const { id } = useParams();
   const [postData, setPostData] = useState<TPost | null>(null);
   const [userData, setUserData] = useState<TUser | null>(null);
@@ -37,7 +37,7 @@ const page = () => {
       .catch((e) => {
         console.log(e.message);
       });
-  }, []);
+  }, [id]);
 
   return (
     <>
@@ -137,4 +137,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

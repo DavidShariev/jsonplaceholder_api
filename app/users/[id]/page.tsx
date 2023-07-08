@@ -44,7 +44,7 @@ export default function Page() {
         setPosts(res.data);
       });
     }
-  }, [user]);
+  }, [user, id]);
 
   return (
     <>
