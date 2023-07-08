@@ -1,5 +1,3 @@
-"use client";
-
 import siteMetadata from "@/data/siteMetadata";
 import Link from "next/link";
 import Logo from "@/public/images/logo.svg";
