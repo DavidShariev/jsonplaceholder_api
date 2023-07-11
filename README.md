@@ -26,7 +26,7 @@
 
 ### установка проекта 
 ```
-git clone https://github.com/DavidShariev/Calculator.git
+git clone https://github.com/DavidShariev/jsonplaceholder_api/
 ```
 
 ### Установка зависимостей
